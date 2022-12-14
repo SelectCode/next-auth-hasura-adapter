@@ -1,11 +1,11 @@
-mutation CreateVerificationToken($data: verification_tokens_insert_input!) {
-  insert_verification_tokens_one(object: $data) {
+mutation CreateVerificationToken($data: VerificationTokensInsertInput!) {
+  insertVerificationTokensOne(object: $data) {
     ...VerificationToken
   }
 }
 
 mutation DeleteVerificationToken($identifier: String!, $token: String!) {
-  delete_verification_tokens(
+  deleteVerificationTokens(
     where: { token: { _eq: $token }, identifier: { _eq: $identifier } }
   ) {
     returning {

@@ -1,4 +1,4 @@
-- name: database
+- name: public
   kind: postgres
   configuration:
     connection_info:
@@ -7,5 +7,5 @@
       isolation_level: read-committed
       use_prepared_statements: false
   customization:
-    naming_convention: hasura-default
-  tables: "!include database/tables/tables.yaml"
+    naming_convention: graphql-default
+  tables: "!include public/tables/tables.yaml"

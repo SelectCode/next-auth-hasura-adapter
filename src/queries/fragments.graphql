@@ -1,4 +1,5 @@
-fragment User on users {
+# Try out GraphQL queries here
+fragment User on Users {
   __typename
   id
   name
@@ -7,7 +8,7 @@ fragment User on users {
   emailVerified
 }
 
-fragment Session on sessions {
+fragment Session on Sessions {
   __typename
   id
   userId
@@ -15,25 +16,25 @@ fragment Session on sessions {
   sessionToken
 }
 
-fragment Account on accounts {
+fragment Account on Accounts {
   __typename
   id
   type
   scope
   userId
-  id_token
+  idToken
   provider
-  expires_at
-  token_type
-  oauth_token
-  access_token
-  refresh_token
-  session_state
+  expiresAt
+  tokenType
+  oauthToken
+  accessToken
+  refreshToken
+  sessionState
   providerAccountId
-  oauth_token_secret
+  oauthTokenSecret
 }
 
-fragment VerificationToken on verification_tokens {
+fragment VerificationToken on VerificationTokens {
   __typename
   token
   expires

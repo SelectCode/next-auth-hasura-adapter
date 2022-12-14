@@ -1,5 +1,5 @@
 {
-  "name": "next-auth-hasura-adapter",
+  "name": "@selectcode/next-auth-hasura-adapter",
   "version": "1.0.4",
   "description": "This is the Hasura Adapter for next-auth. This package can only be used in conjunction with the primary next-auth package. It is not a standalone package.",
   "private": false,
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AmruthPillai/next-auth-hasura-adapter.git"
+    "url": "https://github.com/selectcode/next-auth-hasura-adapter.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -28,11 +28,11 @@
   "author": "Amruth Pillai <im.amruth@gmail.com>",
   "license": "ISC",
   "peerDependencies": {
-    "graphql": "^16.5.0",
-    "graphql-request": "^4.3.0",
+    "graphql": "^16.6.0",
+    "graphql-request": "^5.0.0",
     "graphql-tag": "^2.12.6",
     "hasura-cli": "^2.9.0",
-    "next-auth": "^4.10.3"
+    "next-auth": "^4.18.6"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "2.11.6",
